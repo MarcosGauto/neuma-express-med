@@ -5,7 +5,7 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
 import Image from "next/image"
-import logo from "../../../../../public/img/logo2.png"
+import logo from "../../../../../public/img/logo.jpg"
 
 
 export default async function Nav() {
@@ -13,7 +13,7 @@ export default async function Nav() {
 
   return (
     <div className="sticky top-0 inset-x-0 z-50 group">
-      <header className="relative h-16 mx-auto border-b duration-200 bg-gradient-to-r from-grey-50 to-black border-ui-border-base">
+      <header className="relative h-16 mx-auto border-b duration-200 bg-gradient-to-r border-ui-border-base">
         <nav className="content-container txt-xsmall-plus text-ui-fg-subtle flex items-center justify-between w-full h-full text-small-regular">
           <div className="flex-1 basis-0 h-full flex items-center">
             <div className="h-full">
@@ -28,8 +28,8 @@ export default async function Nav() {
               data-testid="nav-store-link"
               
             >
-              <div style={{position: `relative`, width: `150px`, height: `150px`}}>
-              <Image src={logo} layout="fill" alt=""/>
+              <div className=" text-{#FFD700} ">
+              NEUMAEXPRESS
               </div>
             </LocalizedClientLink>
           </div>
